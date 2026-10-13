@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tevican — independent games. Explore Vampire Test and Sea Dominion.">
+  <meta name="theme-color" content="#101724">
+  <title>Tevican — Indie Games</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101724;--card:#1b2638;--text:#f4f6f8;--muted:#bcc8d7;--accent:#85dbcf}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 15% 0%,#283c52,transparent 40%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    .wrap{width:min(100% - 40px,980px);margin-inline:auto}
+    header{display:flex;justify-content:space-between;align-items:center;padding:28px 0;gap:20px}
+    .brand{font-size:1.2rem;font-weight:800;letter-spacing:.09em;color:var(--text);text-decoration:none}
+    nav a{margin-left:24px;text-decoration:none;color:var(--muted)}
+    nav a:hover{color:var(--text)}
+    .hero{padding:90px 0 80px}
+    .eyebrow{text-transform:uppercase;font-size:.78rem;letter-spacing:.16em;color:var(--accent);font-weight:700}
+    h1{font-size:clamp(2.8rem,8vw,5.7rem);line-height:1.05;letter-spacing:-.055em;max-width:780px;margin:20px 0 22px}
+    .intro{font-size:1.16rem;color:var(--muted);max-width:590px}
+    h2{font-size:1.9rem;letter-spacing:-.025em;margin:0 0 24px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .card{padding:30px;border:1px solid #34465a;border-radius:18px;background:var(--card)}
+    .tag{display:inline-block;border:1px solid #4e6674;color:var(--accent);font-size:.78rem;padding:3px 10px;border-radius:100px}
+    h3{font-size:1.55rem;margin:16px 0 8px}
+    .card p,.about p{color:var(--muted)}
+    .about{padding:72px 0 60px;max-width:670px}
+    footer{padding:22px 0 42px;border-top:1px solid #34465a;color:var(--muted);font-size:.92rem;display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap}
+    @media(max-width:650px){.hero{padding:64px 0}.grid{grid-template-columns:1fr}nav a{margin-left:14px}.card{padding:24px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">TEVICAN</a>
+      <nav aria-label="Main navigation"><a href="#games">Games</a><a href="#about">About</a></nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Independent game development</p>
+        <h1 id="hero-title">Small games.<br>Big worlds to explore.</h1>
+        <p class="intro">Welcome to Tevican, home to playful experiments and ambitious game ideas.</p>
+      </section>
+      <section id="games" aria-labelledby="games-title">
+        <h2 id="games-title">Our games</h2>
+        <div class="grid">
+          <article class="card">
+            <span class="tag">Mobile game</span>
+            <h3>Vampire Test</h3>
+            <p>A light-hearted quiz that asks an unusual question: are you human or vampire?</p>
+          </article>
+          <article class="card">
+            <span class="tag">In development</span>
+            <h3>Sea Dominion</h3>
+            <p>A maritime economic strategy about discovering islands, managing ships and trade routes, and building a seafaring state.</p>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="about" aria-labelledby="about-title">
+        <h2 id="about-title">About Tevican</h2>
+        <p>We build games that invite curiosity, exploration, and thoughtful choices. Follow our work on <a href="https://github.com/tevican" rel="noopener noreferrer">GitHub</a>.</p>
+      </section>
+    </main>
+    <footer><span>© Tevican 2026</span><span>Independent game development</span></footer>
+  </div>
+</body>
+</html>
